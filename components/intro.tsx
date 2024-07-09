@@ -32,7 +32,7 @@ export default function Intro() {
           >
             <Image
               src="/avatar.png"
-              alt="Ricardo portrait"
+              alt="Om Panchwate"
               width="192"
               height="192"
               quality="95"
@@ -64,8 +64,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello there, </span>This is
         <span className="font-bold"> Om Panchwate.</span> <br />
-        I am an enthusiastic, ambitious & passionate Web developer, trying to make every moment count.
-      </motion.h1>
+        I am an enthusiastic, ambitious & passionate Full stack Developer      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"

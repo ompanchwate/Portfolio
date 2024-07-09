@@ -2,11 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
-import sociochain from "@/public/sociochain.png";
-import todo from "@/public/todo.png";
-import githubapi from "@/public/githubapi.png";
-import htf from "@/public/htf.png";
+import chatify from "@/public/chatify.png";
+import inc from "@/public/inc.jpg";
+import estate from "@/public/estate.jpg";
 
 export const links = [
   {
@@ -30,6 +28,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Education",
+    hash: "#education",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -37,63 +39,71 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineer",
+    company: "Bit Solve Technologies Pvt. Ltd",
+    location: "Pune",
+    description:
+      " Designed and developed an event management system using ReactJS for frontend. Utilized SQL procedures to enhance streamline database operations, ensuring efficient data retrieval",
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb 2024 - April 2024",
+  },
+
+  {
+    title: "Android Developer",
+    company: "Eco - Cosmo",
+    location: "Pune",
+    description:
+      "• Assisted in enhancing and updating existing Android applications, ensuring improved functionality and user experience. Also, Collaborated with teams to diagnose and fix app issues. • Gained hands-on experience with Android SDK, Bluetooth APIs, and real-time data communication protocols",
+    icon: React.createElement(CgWorkAlt),
+    date: "Dec 2023 - Feb 2024",
+  },
+
+] as const;
+
+export const education = [
+  {
+    title: "Bachelor's in Computer Science",
+    location: "Pune Institute of Computer Technology, Pune",
+    description:
+      "Acquired in-depth knowledge of web development technologies and completed various freelancing projects.",
+    icon: React.createElement(LuGraduationCap),
+    date: " 2022 - 2025",
+  },
+  {
     title: "Diploma in Computer Science",
     location: "Government Polytechnic, Amravati",
     description:
-      "Learned intermediate programming and gain experience in Web development.",
+      "Gained a solid foundation in programming and web development.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019-2022",
-  },
-  {
-    title: "Bachelors in Computer Science",
-    location: "Pune Institute of Computer Technology, Pune ",
-    description:
-      "Learned a lot of new technologies of Web development and did Freelancing Projects",
-    icon: React.createElement(CgWorkAlt),
-    date: "2023 - Present",
-  },
-  {
-    title: "Coming Soon",
-    location: "Pune",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, Tailwind, Prisma and MongoDB also some frameworks like Django, CodeIgniter. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: " 2019 - 2022",
   },
 ] as const;
 
+
 export const projectsData = [
   {
-    url: "https://todo-list-by-ompanchwate.vercel.app/",
-    title: "Todo Application",
+    url: "https://github.com/ompanchwate/Chatify",
+    title: "Chatify - ChatApp",
     description:
-      "It is a Todo application for managing your daily todos. and used to maintain a good habit of managing and writting down the task.",
-    tags: ["Reactjs", "TailwindCSS"],
-    imageUrl: todo,
+      "Developed a chat application using Next.js, Shadcn, and Convex, allowing users to seamlessly sign up, initiate conversations, and share texts, videos, and images",
+    tags: ["NextJS", "TailwindCSS", "ShadCN", "Convex"],
+    imageUrl: chatify,
   },
   {
-    url: "#",
-    title: "Socio-Chain",
+    url: "https://github.com/ompanchwate/inc_23_website",
+    title: "InC - Event Management System",
     description:
-      "Developed a Decentralized social media platform just like X (Former Twitter)",
-    tags: ["Next.js", "Tailwind", "Blockchain", "Metamask", "Nodejs", "Prisma"],
-    imageUrl: sociochain,
+      "Integrating features such as event registration, project allocation to judges, Marks entry and result calculation.",
+    tags: ["ReactJS", "NodeJS", "CSS", "SQL"],
+    imageUrl: inc
   },
   {
-    url: "https://github-by-l1usvkwd2-ompanchwate.vercel.app/",
-    title: "Github User data",
+    url: "https://estate-finder.vercel.app/",
+    title: "Estate Finder",
     description:
-      "You can search any github user using this application and see all his repositories and statistics",
-    tags: ["React", "Next.js", "API", "Tailwind", "Github API"],
-    imageUrl: githubapi
-  },
-  {
-    url: "https://hope-trust-foundation.netlify.app/",
-    title: "Hope Trust Foundation",
-    description:
-      "Website for my friend's Foundation",
-    tags: ["HTML", "CSS"],
-    imageUrl: htf
+      "User can find estate all around the world. They can add their own property and can also book a visit to see any property",
+    tags: ["ReactJS", "MongoDB", "CSS"],
+    imageUrl: estate
   },
 ] as const;
 
@@ -109,8 +119,10 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Convex",
   "Git",
   "TailwindCSS",
+  "ShadCN",
   "MySQL",
   "MongoDB",
   "Python",
