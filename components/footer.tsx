@@ -1,4 +1,3 @@
-import Script from "next/script";
 import React from "react";
 
 export default function Footer() {
@@ -8,10 +7,9 @@ export default function Footer() {
         &copy; 2024 All rights reserved.
       </small>
       <p>
-        <span className="text-md font-bold tracking-wide mt-3">
-          Made with ❤️ by Om Panchwate
-        </span>
+        <span className="text-md font-bold tracking-wide mt-3">Made with ❤️ by Om Panchwate</span>
       </p>
+        
     </footer>
   );
 }
